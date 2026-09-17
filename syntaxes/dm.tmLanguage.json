@@ -383,6 +383,10 @@
             ]
         },
         {
+            "match": "SS(\\w+)",
+            "name": "entity.name.namespace.dm"
+        },
+        {
             "match": "\\b(\\w+)(?>\\s*\\()",
             "name": "entity.name.function.dm"
         },
