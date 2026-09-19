@@ -383,6 +383,20 @@
             ]
         },
         {
+            "match": "(\\w+)\\/?(proc)?\\/\\b(\\w+)(?>\\s*\\()",
+            "captures":{
+                "1":{
+                "name": "variable.dm"
+                },
+                "2":{
+                    "name": "storage.type.dm"
+                },
+                "3":{
+                    "name": "entity.name.function.dm"
+                }
+            }
+        },
+        {
             "match": "SS(\\w+)",
             "name": "entity.name.namespace.dm"
         },
